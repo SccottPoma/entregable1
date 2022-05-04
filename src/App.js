@@ -11,17 +11,18 @@ function App() {
 
   const [ index, setIndex ] = useState(randomIndex)
 
-  const changePhrase = () =>{
+  const changePhrase = () => {
     const randomIndex = Math.floor( Math.random() * quotes.length )
     setIndex(randomIndex)
   }
-  const randomColor = Math.floor( Math.random() * colors.length )
+
+  // const randomColor = Math.floor( Math.random() * colors.length )
   
   document.body.style = `background: ${colors[randomColor]}`;
 
   return (
     <div className="App">
-    <QuoteBox index={index} changePhrase={changePhrase} randomColor= {colors[randomColor]} /* randomColor = {<Colors/>} */ />
+    <QuoteBox index={index} changePhrase={changePhrase} /* randomColor= {colors[randomColor]} */ />
     </div>
   );
 }
