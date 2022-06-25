@@ -4,7 +4,7 @@ import QuoteBox from './components/QuoteBox';
 import quotes from './quotes.json'
 
 
-const colors = [ "red", "blue", "green", "grey", "orange", "lightBlue"];
+// const colors = [ "red", "blue", "green", "grey", "orange", "lightBlue"];
 function App() {
   
   const randomIndex = Math.floor( Math.random() * quotes.length )
@@ -18,7 +18,7 @@ function App() {
 
   // const randomColor = Math.floor( Math.random() * colors.length )
   
-  document.body.style = `background: ${colors[randomColor]}`;
+  // document.body.style = `background: ${colors[randomColor]}`;
 
   return (
     <div className="App">
